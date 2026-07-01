@@ -524,191 +524,88 @@ section p{
 }
 
 /* client */
-body{
-  font-family: sans-serif;
-  
-  margin:0;
-}
-
-.container{
-  width:90%;
-  max-width:1100px;
-  margin:auto;
-}
-
 .testimonial-section{
-  padding:80px 0;
+  padding:60px 0;
 }
 
-/* Header */
-.header{
-  text-align:center;
-  position:relative;
-  margin-bottom:50px;
-}
-
-.subtitle{
-  color:#6cc400;
-  font-weight:600;
-}
-
-.header h2{
-  font-size:40px;
-  margin:10px 0;
-  color:#2c3e50;
-}
-
-.arrows{
-  position:absolute;
-  right:0;
-  top:20px;
-  display:flex;
-  gap:10px;
-}
-
-.arrow{
-  width:50px;
-  height:30px;
-  border:1px solid orange;
+.card{
   background:#2f3e46;
-  border-radius:20px;
-  cursor:pointer;
-  font-size:18px;
-  color:orange;
+  padding:25px;
+  border-radius:12px;
+  height:100%;
+  position:relative;
 }
 
-/* ===========================
-   Testimonial Section
-=========================== */
-
-.testimonials {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+.text{
+  color:#bfc8cf;
+  line-height:1.6;
 }
 
-.card {
-  flex: 1 1 350px;
-  background: #2f3e46;
-  padding: 25px;
-  border-radius: 12px;
-  position: relative;
+.line{
+  height:2px;
+  background:orange;
+  margin:20px 0;
 }
 
-.text {
-  color: #bfc8cf;
-  line-height: 1.8;
+.bottom{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  position:relative;
 }
 
-.line {
-  height: 2px;
-  background: orange;
-  margin: 20px 0;
-  width: 100%;
-}
-
-.bottom {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  position: relative;
-}
-
-.bottom img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.text-gold h4 {
-  margin: 0;
-  color: #fff;
-}
-
-.text-gold span {
-  color: #c9c9c9;
-  font-size: 14px;
-}
-
-.stars {
-  color: gold;
-  margin-top: 5px;
-}
-
-.quote {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 40px;
-  color: orange;
-  opacity: .8;
-}
-
-/*==============================
-        Tablet
-===============================*/
-
-@media (max-width: 992px) {
-
-  .testimonials {
-    flex-direction: column;
-  }
-
-  .card {
-    width: 100%;
-  }
-
-}
-
-/*==============================
-        Mobile
-===============================*/
-
-@media (max-width: 576px) {
-
-  .header {
-    text-align: center;
-  }
-
-  .header h2 {
-    font-size: 28px;
-  }
-
-  .arrows {
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .bottom {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .quote {
-    position: static;
-    margin-left: auto;
-    font-size: 32px;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  .text {
-    font-size: 15px;
-  }
-
+.bottom img{
+  width:60px;
+  height:60px;
+  border-radius:10px;
 }
 
 .text-gold h4{
-    margin:0;
-    color:#fff;
+  margin:0;
+  color:#fff;
 }
 
 .text-gold span{
-    color:#cfcfcf;
-    font-size:14px;
+  font-size:13px;
+  color:#7a8a99;
+}
+
+.stars{
+  color:gold;
+}
+
+.quote{
+  position:absolute;
+  right:0;
+  bottom:0;
+  background-color: #2f3e46;
+  border: none;
+  font-size:40px;
+  color:orange;
+  opacity:0.7;
+}
+
+.arrows{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+  margin-left:auto;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.arrow{
+  background:#2f3e46;
+  color:#fff;
+  border:none;
+  padding:8px 12px;
+  margin: 10px;
+  border-radius:6px;
+  cursor:pointer;
 }
 /* Footer */
 .site-footer {
