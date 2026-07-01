@@ -577,71 +577,139 @@ body{
   color:orange;
 }
 
-/* Cards */
-.testimonials{
-  display:flex;
-  gap:30px;
+/* ===========================
+   Testimonial Section
+=========================== */
+
+.testimonials {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.card{
-  flex:1;
-  background:#2f3e46;
-  padding:25px;
-  border-radius:12px;
-  position:relative;
+.card {
+  flex: 1 1 350px;
+  background: #2f3e46;
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
 }
 
-.text{
-  color:#5f6c7b;
-  line-height:1.6;
+.text {
+  color: #bfc8cf;
+  line-height: 1.8;
 }
 
-.line{
-  height:2px;
-  background:orange;
-  margin:20px 0;
-  width:100%;
+.line {
+  height: 2px;
+  background: orange;
+  margin: 20px 0;
+  width: 100%;
 }
 
-.bottom{
-  display:flex;
-  align-items:center;
-  gap:15px;
-  position:relative;
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
 }
 
-.bottom img{
-  width:60px;
-  height:60px;
-  border-radius:10px;
+.bottom img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.info h4{
-  margin:0;
-  color:#2c3e50;
+.text-gold h4 {
+  margin: 0;
+  color: #fff;
 }
 
-.info span{
-  font-size:13px;
-  color:#7a8a99;
+.text-gold span {
+  color: #c9c9c9;
+  font-size: 14px;
 }
 
-.stars{
-  color:#7cb518;
-  margin-top:5px;
+.stars {
+  color: gold;
+  margin-top: 5px;
 }
 
-.quote{
-  position:absolute;
-  right:0;
-  bottom:0;
-  font-size:40px;
-  color:orange;
-  opacity:0.7;
- background:#2f3e46;
- border: none;
+.quote {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 40px;
+  color: orange;
+  opacity: .8;
 }
 
+/*==============================
+        Tablet
+===============================*/
+
+@media (max-width: 992px) {
+
+  .testimonials {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+}
+
+/*==============================
+        Mobile
+===============================*/
+
+@media (max-width: 576px) {
+
+  .header {
+    text-align: center;
+  }
+
+  .header h2 {
+    font-size: 28px;
+  }
+
+  .arrows {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .bottom {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .quote {
+    position: static;
+    margin-left: auto;
+    font-size: 32px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+}
+
+.text-gold h4{
+    margin:0;
+    color:#fff;
+}
+
+.text-gold span{
+    color:#cfcfcf;
+    font-size:14px;
+}
 /* Footer */
 .site-footer {
   background: #050505;
