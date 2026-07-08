@@ -643,6 +643,13 @@ section p {
   font-size: 0.85rem;
   text-align: center;
 }
+.site-footer i{
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
 /* Page banner */
 .page-banner {
